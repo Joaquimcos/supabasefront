@@ -96,4 +96,39 @@ body {
   input[type="number"] {
     -moz-appearance: textfield;
   }
-  
+  /* Estilo geral da área de resultado */
+.search-result {
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título do resultado */
+.search-result h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #4CAF50;
+}
+
+/* Estilo para o texto do produto */
+.search-result p {
+  margin: 5px 0;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/* Adicione animação para aparecer suavemente */
+.search-result {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.search-result.show {
+  opacity: 1;
+}
